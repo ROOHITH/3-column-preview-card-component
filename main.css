@@ -1,0 +1,137 @@
+/* Colors */
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Typography */
+/* Body Copy */
+p {
+  font-size: 15px;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* You can define specific elements and classes using these colors and fonts. */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/* Apply 'Big Shoulders Display' to headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+/* Apply 'Lexend Deca' to paragraphs */
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.bg1 {
+  background-color: var(--Bright-orange);
+
+}
+.bg2 {
+  background-color: var(--Dark-cyan);
+}
+.bg3 {
+  background-color: var(--Very-dark-cyan);
+}
+
+.bg1,.bg2,.bg3{
+    padding: 30px;
+}
+.img{
+    height: 30px;
+}
+h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+p{
+    color: var(--Transparent-white);
+    font-size: 13px;
+}
+button{
+    padding: 10px;
+    border: 0px;
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.bg1 button{
+color: var(--Bright-orange);
+}
+.bg2 button{
+color: var(--Dark-cyan);
+}
+.bg3 button{
+color: var(--Very-dark-cyan);
+}
+
+/* Layout */
+/* Mobile Layout */
+@media (max-width: 425px) {
+  /* Add your mobile-specific styles here */
+  .centered-div {
+    position: static; /* or whatever the default value should be */
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+.centered-div {
+   margin: 12px;
+  }
+  .bg1 {
+    background-color: var(--Bright-orange);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  }
+  .bg2 {
+    background-color: var(--Dark-cyan);
+  }
+  .bg3 {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+/* Desktop Layout */
+@media (min-width: 426px) {
+  /* Add your desktop-specific styles here */
+ 
+.centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bg1 {
+    background-color: var(--Bright-orange);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  }
+  .bg2 {
+    background-color: var(--Dark-cyan);
+  }
+  .bg3 {
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
